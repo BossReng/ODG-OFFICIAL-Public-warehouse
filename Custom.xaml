@@ -1,0 +1,379 @@
+﻿<local:MyCard Title="【ODG-CRAFT】系统初始化 | System Initialization 2026" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,8" Foreground="#888888" FontSize="12"
+                   Text="System Date: 2026 | Region: Global | Operator: BossReng (ODG Admin)" />
+        
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#333333" FontSize="13"
+                   Text="Greeting, Survivors. 接下来，为您献上由 ODF-OFFICIAL 团队荣誉呈现的 " />
+
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#d84a4aff" FontSize="15" FontWeight="Bold"
+                   Text="ODG-CRAFT ( 原 RPU-CRAFT )" />           
+                   
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,6" Foreground="#888888" FontWeight="Bold" FontSize="13"
+                   Text="我们走过了一段漫长的弯路，现在终于抵达了终点。" />
+                   
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#333333"
+                   Text="那个曾被寄予厚望的【Re:RPU-CRAFT】修复计划，由于沉重的技术债，最终被确认为“无法完成的幻想”。但废墟之上，必有新生。" />
+
+        <local:MyHint Margin="0,5,0,2" IsWarn="False"
+                   Text="现在，我们正式跨越历史。服务器核心版本确认为【1.21.10】。搭载全套粘液科技、全球化群组架构，以及更强大的反作弊系统。" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="【全球通行证】ODG-CRAFT ACCESS TERMINAL" Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="25,40,23,15">
+        
+        <Border Background="#1E1F22" CornerRadius="8" Padding="0">
+            <StackPanel>
+                <Border Background="#2B2D31" CornerRadius="8,8,0,0" Padding="15,10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock Text="⚡ CONNECTION ESTABLISHED" Foreground="#00FF99" FontSize="10" FontWeight="Bold" VerticalAlignment="Center"/>
+                            <TextBlock Text=" | PROTOCOL: SECURE" Foreground="#666666" FontSize="10" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Orientation="Horizontal">
+                            <TextBlock Text="PROTOCOL-CONNECTION-ALIVE" Foreground="#AAAAAA" FontSize="10" FontWeight="Bold" Margin="0,0,8,0"/>
+                            <Border Width="8" Height="8" CornerRadius="4" Background="#00FF99"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+                
+                <Border Padding="15,20,15,20">
+                    <StackPanel>
+                        <TextBlock Text="IDENTITY VERIFICATION REQUIRED" Foreground="#5865F2" FontWeight="Bold" FontSize="11" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+                        
+                        <local:MyButton Margin="0,0,0,5" Height="40"
+                                      Text="&gt;&gt;  点击接入 ODG Discord 总部 (JOIN)  &lt;&lt;" 
+                                      EventType="打开网页" 
+                                      EventData="https://join.bossreng.dpdns.org/" />
+                        
+                        <Grid Margin="0,15,0,0">
+                             <TextBlock Text="/////////////////////////////////////////////////////////////////////////////////" Foreground="#333333" FontSize="8" Opacity="0.5" TextTrimming="CharacterEllipsis"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+                
+                <Border Background="#232428" CornerRadius="0,0,8,8" Padding="15,8">
+                    <Grid>
+                         <TextBlock Text="此链接为获取服务器核心权限(身份组)的唯一途径。" Foreground="#888888" FontSize="10" HorizontalAlignment="Left"/>
+                         <TextBlock Text="ODG-OFFICIAL-ID-SYSTEM" Foreground="#444444" FontSize="10" FontWeight="Bold" HorizontalAlignment="Right"/>
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </Border>
+
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="【通讯矩阵】全球社区接入点状态监控" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,12" Foreground="#666666"
+                   Text="随着 ODG-OFFICIAL 的国际化战略部署，ODG-CRAFT 也受到了影响并将通讯频道已重新划分。请根据状态选择接入：" />
+
+        <Border Background="#F0F2FF" CornerRadius="8" Margin="0,0,0,8" Padding="15,12">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Width="40" Height="40" CornerRadius="20" Background="#5865F2" Margin="0,0,15,0">
+                    <TextBlock Text="D" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock Text="Discord 官方社区" FontWeight="Bold" Foreground="#5865F2" FontSize="14"/>
+                    <TextBlock Text="全球总部 | 身份验证中心 | 核心权限" Foreground="#7A8599" FontSize="11" Margin="0,3,0,0"/>
+                </StackPanel>
+                <Border Grid.Column="2" Background="#5865F2" CornerRadius="6" Padding="10,4" VerticalAlignment="Center">
+                    <TextBlock Text="HEADQUARTERS" Foreground="White" FontSize="10" FontWeight="Bold"/>
+                </Border>
+            </Grid>
+        </Border>
+
+        <Border Background="#FFF7F0" CornerRadius="8" Margin="0,0,0,8" Padding="15,12">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Width="40" Height="40" CornerRadius="20" Background="#444444" Margin="0,0,15,0">
+                    <TextBlock Text="Q" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock Text="QQ / QQ Channel" FontWeight="Bold" Foreground="#444444" FontSize="14"/>
+                    <TextBlock Text="大中华区保留频道 | 仅供闲聊叙旧" Foreground="#998877" FontSize="11" Margin="0,3,0,0"/>
+                </StackPanel>
+                <Border Grid.Column="2" BorderThickness="1.5" BorderBrush="#FF8800" CornerRadius="6" Padding="10,4" VerticalAlignment="Center">
+                    <TextBlock Text="LEGACY / 苟活" Foreground="#FF8800" FontSize="10" FontWeight="Bold"/>
+                </Border>
+            </Grid>
+        </Border>
+
+        <Border Background="#F0FFF4" CornerRadius="8" Margin="0,0,0,12" Padding="15,12">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Width="40" Height="40" CornerRadius="20" Background="#87D068" Margin="0,0,15,0">
+                    <TextBlock Text="K" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock Text="KOOK 语音社区" FontWeight="Bold" Foreground="#52C41A" FontSize="14"/>
+                    <TextBlock Text="计划列装中 | 等待指令" Foreground="#88AA88" FontSize="11" Margin="0,3,0,0"/>
+                </StackPanel>
+                <Border Grid.Column="2" Background="#E6FFFB" CornerRadius="6" Padding="10,4" VerticalAlignment="Center">
+                    <TextBlock Text="PLANNING" Foreground="#00BFFF" FontSize="10" FontWeight="Bold"/>
+                </Border>
+            </Grid>
+        </Border>
+
+        <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+            <TextBlock Text="一随全球化战略部署合并的社区 (Terminated):" FontWeight="Bold" Foreground="#999999" FontSize="11" Margin="0,0,10,0"/>
+            <TextBlock Text="Telegram" Foreground="#CCCCCC" TextDecorations="Strikethrough" FontSize="11" Margin="0,0,10,0"/>
+            <TextBlock Text="WhatsApp" Foreground="#CCCCCC" TextDecorations="Strikethrough" FontSize="11"/>
+        </StackPanel>
+        
+        <local:MyHint Margin="0,15,0,2" IsWarn="True"
+                   Text="权限警告：ODG-CRAFT 采用身份组绑定机制。QQ群不再提供白名单，请务必前往 Discord 完成账号关联。" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="【技术架构】ODG-CRAFT 全新规格说明书" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        
+        <TextBlock Text="VERSION MIGRATION PIPELINE (版本跃迁管线)" FontWeight="Bold" Foreground="#AAAAAA" FontSize="10" Margin="0,0,0,5"/>
+        <Border Background="#F5F7FA" CornerRadius="8" Padding="15,12" Margin="0,0,0,15" BorderThickness="1" BorderBrush="#E0E0E0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/> <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/> <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="1.2*"/> </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" VerticalAlignment="Center" Opacity="0.6">
+                    <TextBlock Text="1.12.2" FontWeight="Bold" Foreground="#666666" HorizontalAlignment="Center"/>
+                    <TextBlock Text="RPU-CRAFT" FontSize="10" Foreground="#888888" HorizontalAlignment="Center"/>
+                    <Border Background="#CCCCCC" Height="2" Margin="10,5,10,0"/>
+                </StackPanel>
+
+                <TextBlock Grid.Column="1" Text="›" Foreground="#BBBBBB" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                    <TextBlock Text="1.16.5" FontWeight="Bold" Foreground="#FF4444" TextDecorations="Strikethrough" HorizontalAlignment="Center"/>
+                    <TextBlock Text="FAILED" FontSize="10" Foreground="#FF4444" HorizontalAlignment="Center" FontWeight="Bold"/>
+                    <Border Background="#FFCCCC" Height="2" Margin="10,5,10,0"/>
+                </StackPanel>
+
+                <TextBlock Grid.Column="3" Text="›" Foreground="#00BFFF" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                <StackPanel Grid.Column="4" VerticalAlignment="Center">
+                    <Border Background="#E6FFED" CornerRadius="4" Padding="5,2" HorizontalAlignment="Center" Margin="0,0,0,2">
+                        <TextBlock Text="Protocol 25.10+" Foreground="#009933" FontSize="10" FontWeight="Bold"/>
+                    </Border>
+                    <TextBlock Text="1.21.10" FontWeight="Bold" Foreground="#00CC00" FontSize="16" HorizontalAlignment="Center"/>
+                    <TextBlock Text="ODG-CRAFT" FontSize="10" Foreground="#008800" HorizontalAlignment="Center" FontWeight="Bold"/>
+                    <Border Background="#00CC00" Height="3" Margin="5,5,5,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <TextBlock Text="CORE MODULES (核心模组矩阵)" FontWeight="Bold" Foreground="#AAAAAA" FontSize="10" Margin="0,0,0,5"/>
+        
+        <Border Background="#F9F0FF" CornerRadius="6" Padding="12" Margin="0,0,0,8" BorderThickness="1" BorderBrush="#EAD0FF">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="⚡" FontSize="18" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Slimefun | 粘液科技 [全量重构]" FontWeight="Bold" Foreground="#8800CC" FontSize="13"/>
+                    <TextBlock Text="抛弃阉割版。在 1.21 的高性能引擎上，体验工业与魔法的极致碰撞。" Foreground="#665577" FontSize="11" TextWrapping="Wrap" Margin="0,2,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Background="#F0F8FF" CornerRadius="6" Padding="12" Margin="0,0,0,8" BorderThickness="1" BorderBrush="#D0E8FF">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="🌐" FontSize="18" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Global Proxy | 全球同步架构" FontWeight="Bold" Foreground="#0066CC" FontSize="13"/>
+                    <TextBlock Text="采用全新 Proxy 代理端。实现毫秒级跨服传送与数据实时同步。" Foreground="#556677" FontSize="11" TextWrapping="Wrap" Margin="0,2,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Background="#FFF2F2" CornerRadius="6" Padding="12" Margin="0,0,0,0" BorderThickness="1" BorderBrush="#FFD0D0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="💾" FontSize="18" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Legacy Data | 家园时空锚点" FontWeight="Bold" Foreground="#CC0000" FontSize="13"/>
+                    <TextBlock Text="从 1.16.5 废墟中抢救出的唯一遗产 (Home World) 正在进行跨版本转码。" Foreground="#775555" FontSize="11" TextWrapping="Wrap" Margin="0,2,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="【封存档案】ODG-CRAFT 编年史 | CHRONICLES " Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,25" Foreground="#888888" FontStyle="Italic" HorizontalAlignment="Center"
+                   Text="“ 历史不是被遗忘的灰烬，它是燃烧过后的余温。”" />
+
+        <Border Background="#EFEBE9" CornerRadius="8" BorderThickness="1" BorderBrush="#D7CCC8" Margin="0,0,0,15" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="0,5,0,0">
+                    <Border Width="45" Height="45" CornerRadius="25" Background="#8D6E63" Margin="0,0,0,8" HorizontalAlignment="Center">
+                         <TextBlock Text="🌱" Foreground="White" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <TextBlock Text="2019" FontWeight="Bold" Foreground="#5D4037" FontSize="13" HorizontalAlignment="Center"/>
+                    <Border Background="#8D6E63" CornerRadius="4" Padding="6,2" Margin="0,4,0,0" HorizontalAlignment="Center">
+                        <TextBlock Text="GENESIS" Foreground="White" FontSize="9" FontWeight="Bold"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="15,0,0,0">
+                    <TextBlock Text="序章：星火与 Redstone Power United 之滥觞" FontWeight="Bold" Foreground="#4E342E" FontSize="15" Margin="0,0,0,5"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="#6D4C41" FontSize="12.5" LineHeight="20"
+                               Text="那是“快餐服”横行的荒芜时代，几个渴求净土的灵魂在数据洪流中相遇。Redstone Power United 工会应运而生！他们计划了一个不属于“快餐服”的净土。彼时无需名号，简陋的服务器里没有华丽插件，只有一群志同道合的伙伴，在原版世界里点燃了第一朵属于我们的文明之火。" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Background="#FFF8E1" CornerRadius="8" BorderThickness="1" BorderBrush="#FFE082" Margin="0,0,0,15" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="0,5,0,0">
+                    <Border Width="45" Height="45" CornerRadius="25" Background="#FFB300" Margin="0,0,0,8" HorizontalAlignment="Center">
+                         <TextBlock Text="🏛️" Foreground="White" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <TextBlock Text="2020-2021" FontWeight="Bold" Foreground="#F57F17" FontSize="13" HorizontalAlignment="Center"/>
+                    <Border Background="#FBC02D" CornerRadius="4" Padding="6,2" Margin="0,4,0,0" HorizontalAlignment="Center">
+                        <TextBlock Text="CLASSIC" Foreground="White" FontSize="9" FontWeight="Bold"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="15,0,0,0">
+                    <TextBlock Text="第一章：奠基与双人共治时代" FontWeight="Bold" Foreground="#F57F17" FontSize="15" Margin="0,0,0,5"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="#AF6E09" FontSize="12.5" LineHeight="20"
+                               Text="RPU-CRAFT 的名号正式镌刻于历史。基于 1.12.2 的经典架构，由 BossReng 与 123 两位工会高层共同作业、协力运营。在那个没有加入跨服黑科技的年代，二人合力用最朴实的多世界技术，搭建起了一座稳定而辉煌的乌托邦。这是社区最团结的黄金岁月。" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Background="#FFF3E0" CornerRadius="8" BorderThickness="1" BorderBrush="#FFCC80" Margin="0,0,0,15" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="0,5,0,0">
+                    <Border Width="45" Height="45" CornerRadius="25" Background="#FB8C00" Margin="0,0,0,8" HorizontalAlignment="Center">
+                         <TextBlock Text="🌇" Foreground="White" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <TextBlock Text="2022" FontWeight="Bold" Foreground="#E65100" FontSize="13" HorizontalAlignment="Center"/>
+                    <Border Background="#EF6C00" CornerRadius="4" Padding="6,2" Margin="0,4,0,0" HorizontalAlignment="Center">
+                        <TextBlock Text="LEGACY" Foreground="White" FontSize="9" FontWeight="Bold"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="15,0,0,0">
+                    <TextBlock Text="第二章：理想中的“乌托邦”... 吗？" FontWeight="Bold" Foreground="#E65100" FontSize="15" Margin="0,0,0,5"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="#BF360C" FontSize="12.5" LineHeight="20"
+                               Text="Season 3 是一次触摸MOD边界的尝试。那是一个洋溢着人情味的草莽时代，在 BossReng 的理想中：这将成为 RPU-CRAFT 一大新的壮举。我们曾试图共同面对各方面困难，但最终事与愿违 —— 由于资金短缺以及 RPU 管理层的人心涣散，服务器不得已由云端迁到了本地。此时我们认为服务器尚能苟活，只需等待赞助并东山再起...可谁知...它最终在一台旧电脑上结束了自己的生命..." />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Background="#FFEBEE" CornerRadius="8" BorderThickness="1" BorderBrush="#EF9A9A" Margin="0,0,0,15" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="0,5,0,0">
+                    <Border Width="45" Height="45" CornerRadius="25" Background="#E53935" Margin="0,0,0,8" HorizontalAlignment="Center">
+                         <TextBlock Text="⚔️" Foreground="White" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <TextBlock Text="2023" FontWeight="Bold" Foreground="#C62828" FontSize="13" HorizontalAlignment="Center"/>
+                    <Border Background="#D32F2F" CornerRadius="4" Padding="6,2" Margin="0,4,0,0" HorizontalAlignment="Center">
+                        <TextBlock Text="SOLITUDE" Foreground="White" FontSize="9" FontWeight="Bold"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="15,0,0,0">
+                    <TextBlock Text="第三章：孤高的进化与离散" FontWeight="Bold" Foreground="#C62828" FontSize="15" Margin="0,0,0,5"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="#B71C1C" FontSize="12.5" LineHeight="20"
+                               Text="经历了 Season 3 入不敷出的打击，BossReng 做出了决定性的转折，他带领着 Redstone Powered United 仅存的坚守者，正式并入 ODG-OFFICIAL。这一举措虽保住了服务器的文件，却也伴随着沉痛的代价：昔日的团队成员在架构变迁与时代洪流中四散天涯。最终，这场为了延续火种的战略合并，只留下 BossReng 独自在新的宏大版图中守望。" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Background="#F3E5F5" CornerRadius="8" BorderThickness="1" BorderBrush="#CE93D8" Margin="0,0,0,15" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="0,5,0,0">
+                    <Border Width="45" Height="45" CornerRadius="25" Background="#7E57C2" Margin="0,0,0,8" HorizontalAlignment="Center">
+                         <TextBlock Text="👾" Foreground="White" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <TextBlock Text="2024-2025" FontWeight="Bold" Foreground="#4A148C" FontSize="13" HorizontalAlignment="Center"/>
+                    <Border Background="#673AB7" CornerRadius="4" Padding="6,2" Margin="0,4,0,0" HorizontalAlignment="Center">
+                        <TextBlock Text="GLITCH" Foreground="White" FontSize="9" FontWeight="Bold"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="15,0,0,0">
+                    <TextBlock Text="第四章：虚幻的 Re:RPU-CRAFT 与断层" FontWeight="Bold" Foreground="#6A1B9A" FontSize="15" Margin="0,0,0,5"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="#4A148C" FontSize="12.5" LineHeight="20"
+                               Text="离开前，我们曾许以玩家一个虚假的承诺：Re:RPU-CRAFT，并将其定档于 1.16.5 ... 但数据损毁与插件冲突的洪流最终冲垮了希望。那是一段灰暗的断层历史，计划沦为泡影。在一切归零的废墟中，唯有那份奇迹般幸存的【家园世界】备份，成为了连接未来的唯一锚点。" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Background="#E0F2F1" CornerRadius="8" BorderThickness="1" BorderBrush="#80CBC4" Margin="0,0,0,5" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="0,5,0,0">
+                    <Border Width="45" Height="45" CornerRadius="25" Background="#009688" Margin="0,0,0,8" HorizontalAlignment="Center">
+                         <TextBlock Text="🚀" Foreground="White" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <TextBlock Text="2026" FontWeight="Bold" Foreground="#00695C" FontSize="13" HorizontalAlignment="Center"/>
+                    <Border Background="#00897B" CornerRadius="4" Padding="6,2" Margin="0,4,0,0" HorizontalAlignment="Center">
+                        <TextBlock Text="REBIRTH" Foreground="White" FontSize="9" FontWeight="Bold"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="15,0,0,0">
+                    <TextBlock Text="第五章：ODG-CRAFT 文明重启" FontWeight="Bold" Foreground="#00695C" FontSize="15" Margin="0,0,0,5"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="#004D40" FontSize="12.5" LineHeight="20"
+                               Text="不再修补残垣断壁，我们选择在 1.21.10 的全新地基上重建文明。搭载全球同步架构与全量重构的粘液科技。今天的 ODG-CRAFT，是 Redstone Power United 精神在历经磨难后的终极形态——它没有死，它完成了涅槃，并张开了长大的羽翼。" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <TextBlock TextWrapping="Wrap" Margin="0,25,0,0" FontSize="11" Foreground="#AAAAAA" HorizontalAlignment="Center"
+                   Text="Data Archive Compiled by BossReng | ODG-OFFICIAL Management Force" />
+    </StackPanel>
+</local:MyCard>
